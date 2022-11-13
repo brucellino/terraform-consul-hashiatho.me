@@ -53,11 +53,14 @@ examples themselves
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >1.2.0 |
+| <a name="requirement_consul"></a> [consul](#requirement\_consul) | 2.16.2 |
+| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 3.10.0 |
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_consul"></a> [consul](#provider\_consul) | 2.16.2 |
 
 ## Modules
 
@@ -65,13 +68,15 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [consul_acl_policy.agent](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/resources/acl_policy) | resource |
+| [consul_acl_token.agents](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/resources/acl_token) | resource |
+| [consul_nodes.dc1-nodes](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/data-sources/nodes) | data source |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_dummy"></a> [dummy](#input\_dummy) | dummy variable | `string` | n/a | yes |
+No inputs.
 
 ## Outputs
 

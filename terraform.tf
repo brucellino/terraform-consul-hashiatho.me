@@ -1,15 +1,16 @@
-# Use this file to declare the terraform configuration
-# Add things like:
-# - required version
-# - required providers
-# Do not add things like:
-# - provider configuration
-# - backend configuration
-# These will be declared in the terraform document which consumes the module.
-
 terraform {
-  required_version = ">1.2.0"
   required_providers {
-    # Add your required providers here.
+    consul = {
+      source  = "hashicorp/consul"
+      version = "2.16.2"
+    }
+    vault = {
+      source  = "hashicorp/vault"
+      version = "3.10.0"
+    }
+  }
+  backend "consul" {
+    scheme = "http"
+    path   = "hashiatho.me/consul/tfstate"
   }
 }
