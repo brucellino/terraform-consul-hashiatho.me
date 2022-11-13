@@ -61,6 +61,7 @@ examples themselves
 | Name | Version |
 |------|---------|
 | <a name="provider_consul"></a> [consul](#provider\_consul) | 2.16.2 |
+| <a name="provider_vault"></a> [vault](#provider\_vault) | 3.10.0 |
 
 ## Modules
 
@@ -72,11 +73,15 @@ No modules.
 |------|------|
 | [consul_acl_policy.agent](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/resources/acl_policy) | resource |
 | [consul_acl_token.agents](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/resources/acl_token) | resource |
+| [vault_consul_secret_backend.main](https://registry.terraform.io/providers/hashicorp/vault/3.10.0/docs/resources/consul_secret_backend) | resource |
 | [consul_nodes.dc1-nodes](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/data-sources/nodes) | data source |
+| [vault_kv_secret_v2.consul](https://registry.terraform.io/providers/hashicorp/vault/3.10.0/docs/data-sources/kv_secret_v2) | data source |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_consul_http_addr"></a> [consul\_http\_addr](#input\_consul\_http\_addr) | Consul HTTP Address | `string` | `"http://bare:8500"` | no |
 
 ## Outputs
 
