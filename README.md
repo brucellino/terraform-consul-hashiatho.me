@@ -53,8 +53,9 @@ examples themselves
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_consul"></a> [consul](#requirement\_consul) | 2.16.2 |
-| <a name="requirement_vault"></a> [vault](#requirement\_vault) | 3.10.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
+| <a name="requirement_consul"></a> [consul](#requirement\_consul) | ~> 2.16.2 |
+| <a name="requirement_vault"></a> [vault](#requirement\_vault) | ~> 3.10.0 |
 
 ## Providers
 
@@ -71,11 +72,13 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [consul_acl_policy.agent](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/resources/acl_policy) | resource |
-| [consul_acl_token.agents](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/resources/acl_token) | resource |
-| [vault_consul_secret_backend.main](https://registry.terraform.io/providers/hashicorp/vault/3.10.0/docs/resources/consul_secret_backend) | resource |
-| [consul_nodes.dc1-nodes](https://registry.terraform.io/providers/hashicorp/consul/2.16.2/docs/data-sources/nodes) | data source |
-| [vault_kv_secret_v2.consul](https://registry.terraform.io/providers/hashicorp/vault/3.10.0/docs/data-sources/kv_secret_v2) | data source |
+| [consul_acl_policy.agent](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/acl_policy) | resource |
+| [consul_acl_policy.servers](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/acl_policy) | resource |
+| [consul_acl_token.agents](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/resources/acl_token) | resource |
+| [vault_consul_secret_backend.main](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/consul_secret_backend) | resource |
+| [vault_consul_secret_backend_role.main](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/consul_secret_backend_role) | resource |
+| [consul_nodes.dc1_nodes](https://registry.terraform.io/providers/hashicorp/consul/latest/docs/data-sources/nodes) | data source |
+| [vault_kv_secret_v2.consul](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/data-sources/kv_secret_v2) | data source |
 
 ## Inputs
 
